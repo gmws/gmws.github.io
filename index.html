@@ -16,23 +16,38 @@
 </head>
 <body>
     <div class="body">
+        <div id="home">
         <div class="navbar">
             <nav class="navbar">
                 <!-- LOGO -->
-                <div class="logo"><img src="src/img/Gabe's.png" alt="logo"></div>
+                <div class="logo"><img src="src/img/Gabe's.png" alt="icon"></div>
                 <!-- NAVIGATION MENU -->
                 <ul class="nav-links">
                 <!-- USING CHECKBOX HACK -->
                 <input type="checkbox" id="checkbox_toggle" />
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 <!-- NAVIGATION MENUS -->
-                <div class=”menu”>...</div>
+                <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="services">
+                <a href="serv.html">Services</a>
+                <!-- DROPDOWN MENU -->
+                <ul class="dropdown">
+                <li><a href="#home">Home</a></li>
+                <li><a href="/">Get Started</a></li>
+                <li><a href="/">About Me</a></li>
+                </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                </div>
                 </ul>
                 </nav>
         </div>
+        
         <div class="top">
             <h1 id="title">
-Fast, Secure, And Relable.
+Fast, Secure, And Relable Web Services
             </h1>
             <p id="discription">
                 <br>
@@ -43,5 +58,7 @@ Fast, Secure, And Relable.
             </div>
         </div>
     </div>
+</div>
+
 </body>
 </html>
