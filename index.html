@@ -2,57 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Free Web Services, Gabe Macri">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Server, Scripting,">
-    <meta name="author" content="John Doe">
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Services|All Of Your Web Srvice Need's</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <script src="src/js/main.js"></script>
-    <link rel="shortcut icon" href="src/img/Gabe's.png" type="image/x-icon">
+    <title>Gabe Macri - Aspiring Pilot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .aviation-photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .aviation-photo {
+            margin: 10px;
+            max-width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .aviation-photo:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background-color: #444;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="body">
-        <div id="home">
-        <div class="navbar">
-            <nav class="navbar">
-                <!-- LOGO -->
-                <div class="logo">Gabes Web Services</div>
-                <!-- NAVIGATION MENU -->
-                <ul class="nav-links">
-                <!-- USING CHECKBOX HACK -->
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="services">
-                <a href="serv.html">Services</a>
-                <!-- DROPDOWN MENU -->
-                </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-                </div>
-                </ul>
-                </nav>
-        </div>
-        
-        <div class="top">
-            <h1 id="title">
-Fast, Secure, And Relable Web Services
-            </h1>
-            <p id="discription">
-                <br>
-            Our web services offer fast relable and free website creation, server hosting, and online stores.
-                </br>   
-            </p>
-
-            </div>
+    <header>
+        <h1>Gabe Macri</h1>
+        <p>Aspiring Pilot</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#photos">Aviation Photos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="about">
+        <h2>About Me</h2>
+        <p>I'm Gabe Macri, and my dream is to become a pilot. Ever since I was a child, I've been fascinated by aviation, and I'm working hard to turn that passion into a career.</p>
+    </div>
+    <div class="container" id="photos">
+        <h2>Aviation Photos</h2>
+        <div class="aviation-photos">
+            <img src="aviation1.jpg" alt="Aviation Photo 1" class="aviation-photo">
+            <img src="aviation2.jpg" alt="Aviation Photo 2" class="aviation-photo">
+            <img src="aviation3.jpg" alt="Aviation Photo 3" class="aviation-photo">
+            <img src="aviation4.jpg" alt="Aviation Photo 4" class="aviation-photo">
+            <img src="aviation5.jpg" alt="Aviation Photo 5" class="aviation-photo">
+            <img src="aviation6.jpg" alt="Aviation Photo 6" class="aviation-photo">
+            <!-- Add more aviation photos as needed -->
         </div>
     </div>
-</div>
-
+    <div class="container" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
